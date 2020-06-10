@@ -1,0 +1,10 @@
+//do not add plugin here
+//apply plugin: 'fullstory'
+
+dependencies {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://maven.fullstory.com" }
+    }
+}
