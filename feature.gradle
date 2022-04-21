@@ -3,8 +3,8 @@
 
 dependencies {
     repositories {
+        mavenCentral()
         google()
-        jcenter()
         maven { url "https://maven.fullstory.com" }
     }
 }

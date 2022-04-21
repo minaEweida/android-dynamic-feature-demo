@@ -2,16 +2,22 @@ apply plugin: "com.android.dynamic-feature"
 apply from: "$rootDir/feature.gradle"
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 31
+    buildToolsVersion "32.0.0"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    flavorDimensions "something"
+    productFlavors {
+        prod {}
+        stag {}
     }
 
 }
